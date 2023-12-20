@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace LegoMiniFigures_2023.Heads
 {
-    internal class AstronautHead
+    class AstronautHead : HeadBase
     {
-        public LegoColor Color { get; set; }
         public bool WearingHelmet { get; set; }
         public FacialHair FacialHair { get; set; }
 
 
-
-        public void SayHi()
+        // Taking the base class behivior and adding to it //
+        public override void SayHi()
         {
+            // Base - means let me interact directly with the thing that I am inheriting from // Inside of this overwriten method, I am going to call the base class say hi method, and then do something else //
+            base.SayHi(); 
             Console.WriteLine("Marjor Tom to Ground Control...");
         }
 

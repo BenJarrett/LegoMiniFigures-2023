@@ -7,13 +7,18 @@ namespace LegoMiniFigures_2023
     {
         static void Main(string[] args)
         {
-            
-
-            var head = new ConstructionWorkerHead();
 
 
-            head.Color = LegoColor.Yellow;
+            var constructionHead = new ConstructionWorkerHead();
+            var batmanhead = new BatmanHead();
+            var astroHead = new AstronautHead();
 
+
+            constructionHead.Color = LegoColor.Yellow;
+
+            constructionHead.SayHi();
+            batmanhead.SayHi();
+            astroHead.SayHi();
 
         }
     }

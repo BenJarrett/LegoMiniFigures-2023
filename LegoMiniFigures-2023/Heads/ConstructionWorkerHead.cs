@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace LegoMiniFigures_2023.Heads
 {
-    class ConstructionWorkerHead
+    class ConstructionWorkerHead : HeadBase // - Adding that means we want to inherit from the headbase class // - now a ConstructorWorkerHead IS A HeadBase // - Anything the HeadBase class has, the ConstructoinWorkerHead class gets for free // HIDING MESSAGE - don't hide, just remove the property //
     {
         public bool HasMullet { get; set; }
-        public LegoColor Color { get; set; }
         public int NumberOfTeeth { get; set; }
         public bool WearingHardHat { get; set; }
 
@@ -32,10 +31,10 @@ namespace LegoMiniFigures_2023.Heads
             Console.WriteLine($"The {Color} Construction Worker Hat spins after being hit by a girder.");
         }
 
-        public void SayHi()
-        {
-            Console.WriteLine("The Construction Worker Head says hello.");
-        }
+        //public void SayHi()
+        //{
+        //    Console.WriteLine("The Construction Worker Head says hello.");
+        //}
 
 
     }
