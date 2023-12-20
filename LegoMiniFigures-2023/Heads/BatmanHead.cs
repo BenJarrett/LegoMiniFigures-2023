@@ -18,11 +18,13 @@ namespace LegoMiniFigures_2023.Heads
         }
 
 
-
-        public void Spin()
+        // Abstract Method Override // 
+        // Still need to user the override keyword to define the behavior of the headbase Abstract method Spin() //
+        public override void Spin()
         {
             Console.WriteLine("Where is the joker!?!?");
         }
+        // Abstract Method Override //
 
         public override void SayHi() // Allows us to change the behavior of the base class SayHi method // - Needs the keyword OVERRIDE // - Intentionally changing the wau this behavor works // Can only override method inside of the inherity class //
         {

@@ -20,10 +20,13 @@ namespace LegoMiniFigures_2023.Heads
             Console.WriteLine("Marjor Tom to Ground Control...");
         }
 
-        public void Spin()
+        // Abstract Method Override // 
+        // Still need to user the override keyword to define the behavior of the headbase Abstract method Spin() //
+        public override void Spin()
         {
             Console.WriteLine("The Astronaut head spins to take in the beauty of the cosmos...");
         }
+        // Abstract Method Override // 
 
 
         public void Shave() // Sets enum to default value //

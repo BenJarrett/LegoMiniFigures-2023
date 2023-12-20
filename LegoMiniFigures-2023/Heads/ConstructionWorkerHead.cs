@@ -22,7 +22,7 @@ namespace LegoMiniFigures_2023.Heads
 
 
         
-        public void Spin()
+        public override void Spin()
         {
             if (NumberOfTeeth > 0) // If you have teeth, you can lose them, if not you can lose anymore teeth //
             {
