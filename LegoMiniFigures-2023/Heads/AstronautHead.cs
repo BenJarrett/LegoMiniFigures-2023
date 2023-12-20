@@ -27,6 +27,7 @@ namespace LegoMiniFigures_2023.Heads
 
         public void Shave() // Sets enum to default value //
         {
+            Console.WriteLine($"The Astronaut head shaves its {FacialHair}.");
             FacialHair = FacialHair.None;
         }
 
